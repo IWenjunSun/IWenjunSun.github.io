@@ -27,5 +27,6 @@ https://www.joshuawise.com/horndis
  MLO then should copy UBOOT to external RAM and RUN
  UBOOT then use the uEnv.txt to boot the programs
  It copies Linux or other program into memory location and then jumps to that location and run
-
+ example: https://elinux.org/Building_BBB_Kernel
+ 
 ```
