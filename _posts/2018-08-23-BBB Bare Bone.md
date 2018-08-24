@@ -17,8 +17,15 @@ https://www.joshuawise.com/horndis
 ### 
 #### https://github.com/ravikp7/node-beagle-boot
 
-### BOOT
-#### - internal ROM -> MLO -> UBOOT -> LINUX
-#### LMO https://witekio.com/blog/writing-mlo-beagleboard-xm/
-#### https://github.com/allexoll/BBB-BareMetal
+### Boot
+```js
+ - internal ROM -> MLO -> UBOOT -> LINUX
+ LMO https://witekio.com/blog/writing-mlo-beagleboard-xm/
+ https://github.com/allexoll/BBB-BareMetal
+ 
+ For beagle, it will look for MLO (file name) and copy that to internal ram and run
+ MLO then should copy UBOOT to external RAM and RUN
+ UBOOT then use the uEnv.txt to boot the programs
+ It copies Linux or other program into memory location and then jumps to that location and run
 
+```
