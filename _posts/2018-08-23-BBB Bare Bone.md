@@ -18,4 +18,7 @@ https://www.joshuawise.com/horndis
 #### https://github.com/ravikp7/node-beagle-boot
 
 ### BOOT
+#### - internal ROM -> MLO -> UBOOT -> LINUX
 #### LMO https://witekio.com/blog/writing-mlo-beagleboard-xm/
+#### https://github.com/allexoll/BBB-BareMetal
+
