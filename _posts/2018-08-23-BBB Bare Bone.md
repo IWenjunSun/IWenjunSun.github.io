@@ -16,3 +16,6 @@ https://www.joshuawise.com/horndis
 
 ### 
 #### https://github.com/ravikp7/node-beagle-boot
+
+### BOOT
+#### LMO https://witekio.com/blog/writing-mlo-beagleboard-xm/
