@@ -6,8 +6,6 @@ tags:  Ubuntu Pycharm
 author: Wenjun Sun
 ---
 
-* content
-
 ## USB tethering / RNDIS
 ```js
 https://www.joshuawise.com/horndis
