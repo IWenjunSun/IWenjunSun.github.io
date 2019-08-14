@@ -1,0 +1,26 @@
+CANOPEN:
+  PDO:
+  1. http://www.dndev.com/cgi-bin/forum/topic.cgi?forum=2&topic=86
+  你所说的每个从站只有4个TPDO和RPDO，是根据预定义的方式来得到的，所谓预定义的方式，就是将11位COB-ID分为两个部分：
+  4bit Function COde + 7bit Node-ID
+  这样分配出来，每个从站只能分配到4个TPDO和4个RPDO。
+
+  但从技术上说，每一个不同的COB-ID，都可以表示一个TPDO或RPDO，如果你不用将11位的COB-ID按上述预定义的方式分，那你每个从站都有2的7次方X8个COB-ID可以用来表示PDO，不同的COB-ID就可以表示不同的TPDO或RPDO，只要主站与从站在组态时设定好1400H。。。1800H。。。里的sub-index 1的值就OK了。
+
+  综上，如果采用预定义的方式，则从站有NODE-ID的限制，只能有4个TPDO和4个RPDO，而如果不采用预定义的方式，则每个从站都有可能使用128X4个TPDO和RPDO以供传送数据，但我只是说可能，因为整修CANOPEN网络上所有从站的TPDO和RPDO加总的和，也就等于128X8，总数不能超过这个数目的。
+
+  换句话说，也就是，一个从站，可以占用别的从站的NODE-ID，把别人的4个TPDO或是4个RPDO中没有用到的抢过来自己用。
+  
+  
+CAN FD:
+
+POWERLINK:
+
+ETHERCAT:
+  tmc8461-ba
+
+Modbus 485:
+
+Modbus TCP:
+
+Profibus:
