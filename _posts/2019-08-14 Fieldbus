@@ -20,7 +20,7 @@ ETHERCAT:
   tmc8461-ba
 
 Modbus 485:
-
+  test: modbus poll, modbus slave. Modbustools git.
 Modbus TCP:
 
 Profibus:
