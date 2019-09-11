@@ -1,0 +1,17 @@
+A.c B.c C.c
+A.h B.h C.h
+
+A.c include A.h
+B.c include B.h
+C.c include C.h
+
+C need to call B functions
+B need to call A functions
+A.c need B.h's header
+
+so C.h include B.h
+so B.c include A.h
+A.h include B.h
+
+if B.h include A.h, then circurlar include.
+but B.h does not need A's header.
